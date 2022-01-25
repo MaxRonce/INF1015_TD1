@@ -1,0 +1,46 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "ca97326c-321a-4a28-af66-c6be6aa06a06": {
+      "ProjectGuid": "ca97326c-321a-4a28-af66-c6be6aa06a06",
+      "DisplayName": "Exo1",
+      "ColorIndex": 0
+    },
+    "036e488d-bbb2-4e35-9e49-a54d11aee26c": {
+      "ProjectGuid": "036e488d-bbb2-4e35-9e49-a54d11aee26c",
+      "DisplayName": "Exo2",
+      "ColorIndex": 1
+    },
+    "94f25ebd-1295-4361-9e0c-ac8edc061d66": {
+      "ProjectGuid": "94f25ebd-1295-4361-9e0c-ac8edc061d66",
+      "DisplayName": "Exo3",
+      "ColorIndex": 2
+    },
+    "32a27e42-ea0d-4730-b76d-d876e65fef05": {
+      "ProjectGuid": "32a27e42-ea0d-4730-b76d-d876e65fef05",
+      "DisplayName": "Exo4",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Fichiers divers",
+      "ColorIndex": -1
+    },
+    "0f977a0e-a0f3-479c-a9a7-53d008ff36a3": {
+      "ProjectGuid": "0f977a0e-a0f3-479c-a9a7-53d008ff36a3",
+      "DisplayName": "Exo5",
+      "ColorIndex": 4
+    },
+    "dd7ee9ed-4573-4dfa-81a6-a34d9104fed5": {
+      "ProjectGuid": "dd7ee9ed-4573-4dfa-81a6-a34d9104fed5",
+      "DisplayName": "Exo6",
+      "ColorIndex": 5
+    },
+    "51ebf8f8-7dec-4e19-b231-76714c6731fa": {
+      "ProjectGuid": "51ebf8f8-7dec-4e19-b231-76714c6731fa",
+      "DisplayName": "Exo6array",
+      "ColorIndex": 6
+    }
+  },
+  "NextColorIndex": 7
+}
