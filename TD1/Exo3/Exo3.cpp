@@ -1,36 +1,30 @@
-#include <cmath>
 #include <iostream>
+#include <cmath> 
+
 using namespace std;
 
-double entreeValeurValide(double borneINF, double borneSUP, string message) {
-    double valeur;
-    do {
-        cout << message;
-        cin >> valeur;
-    } while (valeur > borneSUP || valeur < borneINF);
-    return valeur;
+double entreeValeurValide(double borneINF, double borneSUP, string message);
+
+int main() {
+	double constanteGravite = 9.81; double hauteurFinale = 0;
+	double hauteurInitiale = entreeValeurValide(0, INFINITY, "Veuillez entrer la hauteur initiale :\n");
+	double nombreRebonds = entreeValeurValide(0, INFINITY, "Veuillez entrer le nombre de rebonds: \n");
+	double coefficientRebonds = entreeValeurValide(0, 1, "Veuillez entrer le coefficient de rebonds: \n");
+	for (double i = 1; i <= nombreRebonds; ++i) {
+		double vitesseAvantRebonds = sqrt(2 * constanteGravite * hauteurInitiale);
+		double vitesseApresRebonds = coefficientRebonds * vitesseAvantRebonds;
+		hauteurFinale = pow(vitesseApresRebonds, 2) / (2 * constanteGravite);
+		hauteurInitiale = hauteurFinale;
+		vitesseAvantRebonds = vitesseApresRebonds;
+	}
+	cout << "hauteur max est : " << hauteurFinale;
+
 }
-
-int main()
-{
-    double hauteurInitiale, coefficiantRebond, nombreRebond, constGravite = 9.81;
-
-    hauteurInitiale = entreeValeurValide(0, INFINITY, "Entrer la hauteur initiale de la balle : ");
-    coefficiantRebond = entreeValeurValide(0, 1, "Entrer le coefficiant de rebond : ");
-    nombreRebond = entreeValeurValide(0, INFINITY, "Entrer le nombre de rebond souhaites : ");
-    nombreRebond = int(nombreRebond);
-
-    double vitesseActuelle, vitesseSuivante,hauteurActuelle, hauteurSuivante;
-    vitesseActuelle = sqrt(2 * constGravite * hauteurInitiale);
-    hauteurActuelle = hauteurInitiale;
-
-    for (int i = 0; i < nombreRebond; i++) {
-        vitesseSuivante = coefficiantRebond * vitesseActuelle;
-        hauteurSuivante = pow(vitesseSuivante, 2) / (2 * constGravite);
-        vitesseActuelle = vitesseSuivante;
-        hauteurActuelle = hauteurSuivante;
-    }
-    cout << "La hauteur atteinte par la balle au bout de " << nombreRebond << " rebond est : " << hauteurActuelle;
-
-    
+double entreeValeurValide(double borneINF, double borneSUP, string message) {
+	double valeur;
+	do {
+		cout << message;
+		cin >> valeur;
+	} while (valeur > borneSUP || valeur < borneINF);
+	return valeur;
 }
